@@ -1,0 +1,169 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+* {
+   font-family: 'Chakra Petch', sans-serif;
+   box-sizing: border-box; 
+}
+
+.background {
+    /* background: url("../images/fond-nuit-aureole.jpg"); */
+    background: no-repeat url("../images/univers.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+ }
+
+ .title {
+   padding: 1rem;
+   font-size: 3rem;
+   color: azure;
+   text-shadow: 2px 2px;
+   text-align: center;
+ }
+
+h1 {
+   padding : 4rem auto 0rem;
+}
+
+ .battle {
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .buttons {
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+#button1 {
+   background-image: url("../images/yoda.png");
+   border-radius: 50% 50%;
+   background-size: 8rem 8rem;
+   height: 8rem;
+   width: 8rem;
+   background-size: cover;
+   background-position: center;
+}
+
+#button2 {
+   background-image: url("../images/soldat-empire.png");
+   border-radius: 50% 50%;
+   background-size: 8rem 8rem;
+   height: 8rem;
+   width: 8rem;
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+
+#button3 {
+   background-image: url("../images/schewbaca.png");
+   border-radius: 50% 50%;
+   background-size: 8rem 8rem;
+   height: 8rem;
+   width: 8rem;
+   background-size: cover;
+   background-position: center;
+}
+
+.monde1 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 30%;
+   max-height: 80%;
+   padding-top: 0rem;
+}
+
+.monde1 img {
+   margin: 1rem 2rem;
+   border-radius: 50%;
+   border: 2px solid;
+   max-width: 80%;
+   
+}
+
+.monde2 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 30%;
+   max-height: 10%;
+}
+
+.monde2 img {
+   border-radius: 50%;
+   border: 2px solid ;
+   margin: 1rem 2rem;
+   max-width: 80%;
+   max-height: 30%;
+}
+
+.monde3 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 30%;
+   height: 60%;
+}
+
+.monde3 img {
+   border-radius: 50%;
+   border: 2px solid ;
+   margin: 1rem 2rem;
+   max-width: 70%; 
+   max-height: 60%;
+}
+
+.hidden {
+   display: none;
+   max-width: 40%;
+   position: absolute;
+   margin-top: 0em;
+   margin-left: 1em;
+   background-color: rgb(24, 46, 71);
+   color:rgb(243, 246, 250);
+   box-shadow: 5px 5px 5px rgb(163, 159, 159);
+}
+
+.score {
+  color: azure;
+  font-size: 2rem;
+} 
+
+/* gestion ovni */
+@keyframes move {
+   from {
+     offset-distance: 0%;
+   }
+ 
+   to {
+     offset-distance: 100%;
+   }
+ }
+ 
+ .ovni {
+   width: 6rem;
+   height: 6rem;
+   background-image: url("../images/ovni.png");
+   border-radius: 100%;
+   /*background-size: 5rem 5rem;
+   height: 5rem;
+   width: 5rem;
+*/   background-position: center;
+   background-size: cover;
+   offset: path("M 200 100 L 1200 200 L 500 500 z") auto;
+   animation: move 15s linear infinite;
+ }
+/* fin gestion ovni */
+
+ 
